@@ -1,0 +1,41 @@
+(< 34 34) = #f
+
+(<= 34 34) = #t
+
+(> 34 34) = #f
+
+(and #t #t) = #t
+
+(and #f #f) = #f
+
+(and #t #f) = #f
+
+(or #t #t) = #t
+
+(or #f #f) = #f
+
+(or #t #f) = #t
+
+(not (even? 2)) = #f
+
+(not (odd? 2)) = #t
+
+(and (odd? 3) (even? 8)) = #t
+
+(number? 3.5) = #t
+
+(integer? 3.5) = #f
+
+(real? 3.5) = #t
+
+(boolean? 3.0) = #f
+
+(boolean? (< 3 3)) = #t
+
+(boolean? "2") = #f
+
+(positive? (* 2 3.5)) = #t
+
+(negative? (* 2 3.5)) = #f
+
+(not (zero? (* 3 3.5))) = #t

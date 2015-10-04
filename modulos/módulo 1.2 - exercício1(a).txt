@@ -1,0 +1,72 @@
+(add1 34) = 35
+
+(sub1 16) = 15
+
+(sub1 16 2) * ERRO *
+
+(expt 2 4) = 16
+
+(expt 2 5) = 32
+
+(abs 5.3) = 5.3
+
+(abs -5.3) = 5.3
+
+(round 16.3) = 16
+
+(round 16.5) = 17
+
+(round 17.5) = 18
+ 
+(round -17.5) = - 18
+
+(truncate 16.3) = 16
+
+
+(truncate 16.9) = 16
+
+(ceiling 16.3) = 17
+
+(ceiling 16.9) = 17
+
+(floor 16.3) = 16
+
+(floor 16.9) = 16
+
+(max 6 2 -15.2 9 1.7) = 9
+
+(min 6 2 -15.2 9 1.7) = -15.2
+
+(quotient 16 3) = 5
+
+(remainder 16 3) = 1
+
+(gcd 16 4 12) = 9
+
+(lcm 16 4 12) = 48
+
+(random 5) = número inteiro aleatório de 0 a 4
+
+(even? 2) = #t
+
+(even? 3) = #f
+
+(odd? 2) = #f
+
+(number? 3.5) = #t
+
+(integer? 3.5) = #f
+
+(real? 3.5) = #t
+
+(real? 3.0) = #t
+
+(real? 3) = #t
+
+(number? "2") = #f
+
+(real? (* 2 3.5)) = #t
+
+(integer? (* 2 3.5)) = #t
+
+(integer? (* 3 3.5)) = #f

@@ -1,0 +1,6 @@
+(define rectangulo-maior 
+  (lambda (lado-a1 lado-a2 lado-b1 lado-b2)
+    (define areaa (* lado-a1 lado-a2))
+    (define areab (* lado-b1 lado-b2))
+    
+    ))

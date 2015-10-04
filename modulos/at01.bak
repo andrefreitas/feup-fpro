@@ -1,0 +1,22 @@
+(define visu-fraccao
+(lambda (n d)
+  (display "frac: ")
+  (display n)
+  (display "/")
+  (display d)
+  
+  ))
+
+(define reduz
+(lambda (n d)
+  (display "frac: ")
+  (/ n d)
+  ))
+
+(define multiplicar-fraccoes
+(lambda (n1 d1 n2 d2)
+  (reduz (* n1 n2) (* d1 d2))
+  ))
+
+(define dividir-fraccoes
+(lambda (n1 d1 n2 d2)

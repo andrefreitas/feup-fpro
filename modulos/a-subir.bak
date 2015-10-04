@@ -1,0 +1,15 @@
+(define a-subir 
+  (lambda (num)
+    (a-subir-i num 0)
+    ))
+
+(define a-subir-i
+  (lambda (num control)
+    (if (or (zero? num) (= control 2) )
+        control
+        (if (<= (quotient num 10) (quotient (remainder num 100) 10))
+        (a-subir-i (quotient num 10) 1)
+        (a-subir-i (quotient num 10) 2)
+        )
+        )
+    ))

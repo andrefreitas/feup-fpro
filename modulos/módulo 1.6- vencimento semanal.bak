@@ -1,0 +1,17 @@
+(define vencmensal
+  (lambda (nome h)
+    (display nome)
+    (display " trabalhou ")
+    (display h)
+    (display " horas durante a semana.")
+    (newline)
+    (display "O seu vencimento semanal foi de ")
+    (cond
+      ((< h 30) (display (* h 10)) )
+      ((and (>= h 30) (<= h 36) ) (display (+ (* 29 10) (* 13 (- h 29)))) )
+      ((> h 36) 
+       (display (+ (+ (* 29 10) (* 13 (- 36 29))) (* 11.5 (- h 36))))
+       
+       )
+      )
+    ))

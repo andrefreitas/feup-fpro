@@ -1,0 +1,7 @@
+(define fruta
+  (lambda (laranjas peras)
+    (cond
+      ((> laranjas peras) 1)
+      ((< laranjas peras) 2)
+      (((= laranjas peras) and (not (zero? laranjas)) (not (zero? peras))) 2)
+      )

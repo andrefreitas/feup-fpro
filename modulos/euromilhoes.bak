@@ -1,0 +1,11 @@
+(define euromilhoes
+(lambda ()
+  (display "Numero 1: ")
+  (gerar 50)
+  (newline)
+  ))
+
+(define gerar
+  (lambda (n)
+    (+ 1 (random n))
+    ))

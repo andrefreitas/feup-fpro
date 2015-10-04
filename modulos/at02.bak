@@ -1,0 +1,6 @@
+(define visu-classifica
+(lambda (cla)
+  (display "classificacao = ")
+  (display cla)
+  (newline)
+  ))

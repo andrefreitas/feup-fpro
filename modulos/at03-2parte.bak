@@ -1,0 +1,15 @@
+(define digito-v-falso
+  (lambda (num)
+    (cond
+      ((= num 0) 0) 
+      ((= num 1) 2) 
+      ((= num 2) 4) 
+      ((= num 3) 6) 
+      ((= num 4) 8) 
+      ((= num 5) 1) 
+      ((= num 6) 3) 
+      ((= num 7) 5) 
+      ((= num 8) 7) 
+      ((= num 9) 9)
+      )
+    ))

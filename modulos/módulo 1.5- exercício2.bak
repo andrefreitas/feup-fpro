@@ -1,0 +1,17 @@
+(define pi (acos -1))
+(define circulo
+  (lambda ()
+    (display "raio (indicar um valor numérico positivo):")
+    (let ((raio (read))) 
+     (if (and (?number raio) (positive? raio))
+         (begin
+           (display "Área do círculo é: ")
+           (* pi (expt raio 2))
+           (newline)
+           (display "Perímetro do círculo é: ")
+           (* 2 pi raio)
+          )
+          (display "Erro: Deve indicar um valor numérico positivo.")
+      ); Fim do if
+     ) ; Fim do let
+ ))

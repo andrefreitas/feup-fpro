@@ -1,0 +1,19 @@
+Verificar se os identificadores estão correctos segundo as regras de constituição de nomes:
+
+x -> Correcto 
+
+% -> Correcto
+
+a67 -> Correcto
+
+a6%7d -> Correcto
+
+a6#7 -> Incorrecto, pois o "#" não pode ser usado num identificador
+
+%a67 -> Correcto
+
+-abc -> Incorrecto visto que não podemos começar com a inicial "-"
+
+lado-inf -> Correcto
+
+5rty -> Incorrecto visto que não podemos começar com um número

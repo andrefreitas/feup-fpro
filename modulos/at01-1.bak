@@ -1,0 +1,5 @@
+(define visu-fraccao
+(lambda (n d)
+  (display "frac: ")
+  (/ n d)
+  ))

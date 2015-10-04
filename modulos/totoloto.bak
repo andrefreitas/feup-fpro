@@ -1,0 +1,21 @@
+(define linha-aposta
+  (lambda (linha)
+    (display "Numero ")
+    (display linha)
+    (display ": ")
+    (display (roleta-1-49))
+    (newline)))
+ 
+(define roleta-1-49
+  (lambda ()
+         (+ 1 (random 49))))
+
+(define aposta-totoloto
+  (lambda ()
+    (linha-aposta 1)
+    (linha-aposta 2)
+    (linha-aposta 3)
+    (linha-aposta 4)
+    (linha-aposta 5)
+    (linha-aposta 6)
+    ))

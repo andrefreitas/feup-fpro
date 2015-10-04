@@ -1,0 +1,13 @@
+(define dia-da-semana
+  (lambda ()
+    (display "dia: ")
+    (let ((d (read)))
+      (dislay "mês: ")
+      (let ((m (read)))
+        (dislay "ano: ")
+        (let ((m (read)))
+          
+          ) ; fim do 3º let
+        ); fim do 2º let
+      ); fim do 1º let
+    ))

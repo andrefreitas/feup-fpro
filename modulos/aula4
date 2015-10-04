@@ -1,0 +1,50 @@
+(define misturar-dois-inteiros
+  (lambda (n1 n2)
+    (cond ((zero? n1)
+           n2)
+          ((zero? n2)
+           n1)
+          (else (+ 
+                 (+ (remainder n1 10) (* (remainder n2 10) 10)) 
+                 (* (misturar-dois-inteiros (quotient n1 10) (quotient n2 10)) 100))))))
+
+(define misturar-dois-inteiros-iter-do
+  (lambda (n1 n2 soma)
+    ;(display "Número junto: ") (display (+ (remainder n1 10) (* (remainder n2 10) 10)))  (newline)
+    ;(display "Correcto: " ) (display (misturar-dois-inteiros n1 n2)) (newline)
+    (cond
+      ((zero? n1)
+       (+ soma (* (expt 10 (contd soma)) n2)))
+      ((zero? n2)
+       (+ soma (* (expt 10 (contd soma)) n1)))
+      (else
+       (misturar-dois-inteiros-iter-do (quotient n1 10) (quotient n2 10) 
+                                    (+ (* (expt 10 (contd soma)) (+ (remainder n1 10) (* (remainder n2 10) 10))) soma))))))
+
+(define misturar-dois-inteiros-iter
+  (lambda (n1 n2)
+    (misturar-dois-inteiros-iter-do n1 n2 0)))
+
+(define contd
+  (lambda (n)
+    (if (zero? n)
+        0
+        (add1 (contd (quotient n 10)))
+        )
+    ))
+
+(define contdec
+  (lambda (n)
+    (if (integer? n)
+        0
+        (add1 (contdec (* n 10)))
+        )))
+
+(define misturar-dois-numeros
+(lambda (n1 n2)
+  (/ (misturar-dois-inteiros (* n1 (expt 10 (contdec n1)))  (* n2 (expt 10 (contdec n2))))
+     (expt 10 (+ (contdec n1) (contdec n2)))
+     )
+   
+  ))
+

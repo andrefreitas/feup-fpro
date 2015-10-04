@@ -1,0 +1,8 @@
+(define area-int
+  (lambda ( x1m x1M y1m y1M x2m x2M y2m y2M)
+    ;Determinar o Delta X
+    (define deltax 0)
+    (if (> x2m x1M)
+     (= deltax 0)
+     )
+    ))

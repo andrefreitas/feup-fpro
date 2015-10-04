@@ -1,0 +1,10 @@
+(require (lib "audio.scm" "user-feup"))
+;Dizer as Centenas
+(define dizer-centenas
+  (lambda (n)
+    (display "s")
+    (if (= n 100)
+        (som "100")
+       (som (number->string (* n (quotient n 100) 100)))
+        )
+    ))
